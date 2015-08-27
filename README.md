@@ -1,2 +1,2 @@
-# scribe
+# phoenix
 Blog Template
