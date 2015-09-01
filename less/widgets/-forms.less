@@ -35,8 +35,8 @@ input[type="password"],
 .input--search,
 textarea {
     background-color: transparent;
-    border: none;
-    box-shadow: inset 0px -2px 0px 0px @font-swatch5-color;
+    border: 1px solid fade(@font-swatch5-color, 20%);
+    //box-shadow: inset 0px -2px 0px 0px @font-swatch5-color;
     font-size:  @font-swatch5-font-size;
     font-weight: @font-swatch5-font-weight;
     display: inline-block;
@@ -47,12 +47,12 @@ textarea {
     -moz-transition: border-color 0.15s ease;
     -o-transition: border-color 0.15s ease;
     transition: border-color 0.15s ease;
-    border-radius: 0;
+    border-radius: @font-swatch7-font-size;
     -webkit-appearance: none;
-
+	padding: .6em 1em;
 
     &:focus {
-        box-shadow: inset 0px -2px 0px 0px #2A2929;
+        //box-shadow: inset 0px -2px 0px 0px #2A2929;
     }
 
     @media @mobile {
@@ -88,11 +88,7 @@ input[type="password"],
 
 
 textarea {
-    padding: 1em;
     display: block;
-    border-color: fade(@font-swatch5-color, 20%);
-    border-style: solid;
-    border-width: 1px 1px 0 1px;
     @media @mobile {
         padding: 0.6em;
         font-size: bkscale(@font-swatch5-font-size, 0.9);
@@ -122,9 +118,9 @@ textarea {
     transition: all 0.1s ease-in-out;
     text-align: left;
     -webkit-appearance: none;
-    box-shadow: inset 0px 0px 0px 2px @font-swatch7-color;
-    background-color: transparent;
-    border-radius: 0;
+    box-shadow: 0px 0px 0px 2px fadeout(@font-swatch7-color, 50%);
+    //background-color: transparent;
+    border-radius: @font-swatch7-font-size;
     position: relative;
     z-index: 100;
 
@@ -136,7 +132,7 @@ textarea {
     }
 
     &:hover {
-        background-color: fade(@font-swatch7-color, 7%);
+        //background-color: fade(@font-swatch7-color, 7%);
     }
 
     @media @mobile {
@@ -150,13 +146,13 @@ textarea {
 
     &:before {
         display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-        background-color: @font-swatch7-color;
+        vertical-align: baseline;
+        margin: 0 5px 0 0;
+        //background-color: @font-swatch7-color;
         color: @color-swatch1;
         width: bkscale(@font-swatch7-font-size, 3);
         text-align: center;
-        position: absolute;
+        //position: absolute;
         top: 0;
         left: 0;
         bottom: 0;

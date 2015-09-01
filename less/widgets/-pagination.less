@@ -43,6 +43,7 @@
     // ------------------------------
 
 
+/*
     @media @bp-global-large, @bp-global-medium {
         .pagination-item:nth-child(2n) .button--pagination {
             background-color: @color-swatch7-alt;
@@ -58,6 +59,7 @@
             background-color: @color-swatch7-alt;
         }
     }
+*/
 
 
 
@@ -69,8 +71,8 @@
 
 
     .button--pagination {
-        background: @color-swatch7;
-        color: @color-swatch6;
+        color: @color-swatch7;
+        background: transparent;
         font-family: @font-swatch7-font-family;
         font-size: @font-swatch5-font-size;
         line-height: 1;
@@ -89,7 +91,8 @@
         }
 
         &:hover {
-            background: @color-swatch7-hover !important;
+            color: darken(@color-swatch7, 10%);
+            background: transparent;
         }
 
 
@@ -101,7 +104,7 @@
 
         &:before, &:after {
             display: inline-block;
-            color: @color-swatch6;
+            color: @color-swatch7;
             text-align: center;
             margin-right: 26px;
             font-size: 3em;
@@ -172,9 +175,9 @@
     // Pagination Number Item
     // ------------------------------
     .pagination-item {
-        -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
 
         &:not(.blogpostlist__pagination-item) {
             @media @bp-global-small {
