@@ -82,7 +82,7 @@
 .section-title {
     font-size: @font-swatch1-font-size;
     padding-bottom: 0.3em;
-    color: @font-swatch5-color;
+    color: @color-swatch1;
     @media @bp-global-medium {
         font-size: bkscale(@font-swatch1-font-size, 0.82);
         line-height: bkscale(@font-swatch1-line-height, 0.82);
@@ -92,7 +92,6 @@
         line-height: bkscale(@font-swatch1-line-height, 0.62);
     }
 }
-
 
 
 
@@ -117,7 +116,6 @@
 // ------------------------------
 // 3.  #Section Body
 // ------------------------------
-
 
 
 
@@ -719,14 +717,16 @@
     // Menu Item Name
 
     .menu-item-name {
-        color: @font-swatch5-color;
+        color: @color-swatch1;
+/*
         box-shadow: inset 0px -1px 0px 0px fade(@font-swatch5-color, 30%);
         display: inline-block;
         line-height: 1.8;
+*/
 
         &:hover {
-            box-shadow: inset 0px -2px 0px 0px fade(@font-swatch5-color, 100%);
-            color: @font-swatch5-color;
+        	color: @color-swatch1;
+			box-shadow: inset 0px -1px 0px 0px @color-swatch1;
         }
 
         @media @bp-global-medium {
@@ -774,3 +774,19 @@
         background: transparent;
     }
 }
+
+
+// Phoenix alternations to menu
+// ------------------------------
+
+.menu-section--subsection .section-subtitle,
+.menu-section--subsection .section-title {
+    color: @font-swatch5-color;
+}
+
+.menu-section--featured .section-title,
+.menu-section--featured .section-subtitle,
+.section-description {
+    color: @color-swatch1;
+}
+

@@ -42,7 +42,7 @@
     .fieldset--search {
         padding: 20px 70px;
         width: 33.33%;
-        background-color: @color-swatch2;
+        border-right: 4px solid @color-swatch2;
 
         @media @bp-global-small{
             width: auto;
@@ -68,7 +68,7 @@
 .ecomproductslist__fieldset--filters {
     padding: 20px 70px;
     width: 66.66%;
-    background-color: @color-swatch2-alt;
+    background-color: darken(@color-swatch1, 5%);
 
     @media  @bp-global-small{
          width: 100%;
@@ -435,7 +435,7 @@
             // Title Link
 
             .title-link {
-                box-shadow: inset 0px -2px 0px 0px #235071;
+				box-shadow: inset 0px -1px 0px 0px @color-swatch7;
                 color: #17344a;
             }
         }

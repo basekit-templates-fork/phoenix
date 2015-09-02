@@ -137,8 +137,13 @@ body {
 
 
 .template-header {
+/*
     box-shadow: 0px 1px 0px 0px darken(@color-swatch1, 5%);
     margin-bottom: -1px;
+*/
+	background-color: @color-swatch7;
+    position: relative;
+    z-index: 1;
 
     // Container
 
@@ -206,6 +211,9 @@ body {
             padding-right: 10px;
         }
     }
+    .company-link {
+	    color: @color-swatch1;
+    }
 }
 
 
@@ -219,7 +227,7 @@ body {
     min-width: 50px;
 
     @media @bp-global-small {
-        border-left: 1px solid darken(@color-swatch1, 5%);
+        border-left: 1px solid lighten(@color-swatch7, 5%);
         padding-left: 6px;
     }
 }

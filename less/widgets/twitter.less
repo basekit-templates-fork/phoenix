@@ -40,13 +40,13 @@
 // ------------------------------
 
 .twitter__avatar {
-
 }
 
 .twitter__avatar-image {
 	width: 40px;
 	height: 40px;
 	display: block;
+	border-radius: 100%;
 
 	@media @bp-global-medium {
 		width: 30px;
@@ -127,7 +127,7 @@
     left: 0;
     font-size: 16px;
     font-family: @font-swatch5-font-family;
-    line-height: 40px;
+    line-height: 28px;
     min-height: 40px;
     margin-left: 55px;
     color: @font-swatch5-color;
@@ -158,14 +158,20 @@
 .tweet-metadata {
 	font-size: 14px;
 	line-height: 1;
-	color: fade(@font-swatch5-color, 50%);
+	//color: fade(@font-swatch5-color, 50%);
 
     @media @bp-global-small {
         font-size: 10px;
     }
 
     a {
-        color: fade(@font-swatch5-color, 50%);
+		box-shadow: inset 0px -1px 0px 0px @color-swatch2;
+		display: inline-block;
+		line-height: 1.3;
+		&:hover {
+			text-decoration: none;
+			box-shadow: inset 0px -1px 0px 0px @color-swatch7;
+		}
     }
 
 }

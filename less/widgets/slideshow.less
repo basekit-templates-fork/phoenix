@@ -29,19 +29,19 @@
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-	-webkit-transform: scale(0.9);
-	-moz-transform: scale(0.9);
-	-o-transform: scale(0.9);
-	-ms-transform: scale(0.9);
-	transform: scale(0.9);
+	-webkit-transform: translate(80px, 0);
+	   -moz-transform: translate(80px, 0);
+	    -ms-transform: translate(80px, 0);
+	     -o-transform: translate(80px, 0);
+	        transform: translate(80px, 0);
 
 	&.current {
 		opacity: 1;
-		-webkit-transform: scale(1);
-		-moz-transform: scale(1);
-		-o-transform: scale(1);
-		-ms-transform: scale(1);
-		transform: scale(1);
+		-webkit-transform: translate(0, 0);
+		   -moz-transform: translate(0, 0);
+		    -ms-transform: translate(0, 0);
+		     -o-transform: translate(0, 0);
+		        transform: translate(0, 0);
 	}
 }
 
@@ -160,6 +160,7 @@
 		height: 50px;
 		line-height: 50px;
 		font-size: 36px;
+		border-radius: 0;
 		@media @bp-global-small {
 			width: 40px;
 			height: 40px;
