@@ -46,6 +46,7 @@
 
         @media @bp-global-small{
             width: auto;
+            border-right: none;
         }
 
         @media @bp-global-medium {
@@ -430,7 +431,8 @@
         -o-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out;
         &:hover {
-            box-shadow: inset 0px 0px 0px 6px fade(@font-swatch5-color, 16%);
+            //box-shadow: inset 0px 0px 0px 6px fade(@font-swatch5-color, 16%);
+            background-color: darken(@color-swatch1, 5%);
 
             // Title Link
 
