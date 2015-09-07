@@ -312,9 +312,27 @@ input:focus {
     }
 }
 
+.blogsearch,
+.signupform,
+.contactform,
+	&__legend {
+		border-right: 4px solid @color-swatch2;
+	}
+}
+.ecomproductslist__fieldset--search {
+	border-right: 4px solid @color-swatch2;
+}
+
 .responsivecolumns {
-	.legend,
-	.fieldset--search {
+	.blogsearch,
+	.signupform,
+	.contactform
+		&__legend {
+			border-right: none;
+		}
+	}
+	.ecomproductslist__fieldset--search {
 		border-right: none;
 	}
 }
+
