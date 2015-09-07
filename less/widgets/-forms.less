@@ -314,25 +314,26 @@ input:focus {
 
 .blogsearch,
 .signupform,
-.contactform,
-	&__legend {
-		border-right: 4px solid @color-swatch2;
-	}
+.contactform {
+    &__legend {
+        border-right: 4px solid @color-swatch2;
+    }
 }
+
 .ecomproductslist__fieldset--search {
-	border-right: 4px solid @color-swatch2;
+    border-right: 4px solid @color-swatch2;
 }
 
 .responsivecolumns {
-	.blogsearch,
-	.signupform,
-	.contactform
-		&__legend {
-			border-right: none;
-		}
-	}
-	.ecomproductslist__fieldset--search {
-		border-right: none;
-	}
+    .blogsearch,
+    .signupform,
+    .contactform {
+        &__legend {
+            border-right: 0;
+        }
+    }
+    .ecomproductslist__fieldset--search {
+        border-right: 0;
+    }
 }
 
